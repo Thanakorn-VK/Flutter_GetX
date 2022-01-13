@@ -29,11 +29,11 @@ class ShoppingPage extends StatelessWidget {
                   itemBuilder: (BuildContext context, int index) {
                     return Card(
                       margin:
-                          const EdgeInsets.all(14), //ระยะห่างระหว่างขอบหน้าจอ
+                          const EdgeInsets.all(14),
                       color: Colors.lightBlue.shade300,
                       child: Padding(
                         padding: const EdgeInsets.all(
-                            16), //ระยะของขอบ Card ใน laout ข้างใน
+                            16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
@@ -132,7 +132,6 @@ class ShoppingPage extends StatelessWidget {
                     ],
                   ),
                   Container(
-                    //color: Colors.blue,
                     height: 88,
                     width: 179,
                     alignment: Alignment.center,
@@ -153,12 +152,6 @@ class ShoppingPage extends StatelessWidget {
                                 Icons.shopping_cart,
                                 size: 60,
                               ),
-
-                              // Obx(() => Text(
-                              //       cartController.count.toString(),
-                              //       style: const TextStyle(
-                              //           fontSize: 22, color: Colors.white),
-                              //     )),
                             ],
                           ),
                         ),

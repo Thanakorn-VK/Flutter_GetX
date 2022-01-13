@@ -6,12 +6,11 @@ class ShoppingController extends GetxController {
 
   @override
   void onInit() {
-    fetchProducts(); // get Date
-    print('call fetchprod');
+    fetchProducts();
     super.onInit();
   }
   void fetchProducts() async { 
-    await Future.delayed(Duration(seconds: 1));
+    await Future.delayed(const Duration(seconds: 1));
     var productResult = [
       Product(1,'FirstProduct','abd','some description about product',25),
       Product(2,'SecondProduct','abd','some description about product',14.5),
@@ -20,7 +19,6 @@ class ShoppingController extends GetxController {
       Product(5,'FifthProduct','abd','some description about product',26.5),
       Product(6,'SixthProduct','abd','some description about product',5.5)
     ];
-    print('pd');
-    products.assignAll(productResult); // เก็บค่าทั้งหมดลงใน products
+    products.assignAll(productResult);
   }
 }

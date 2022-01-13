@@ -22,11 +22,11 @@ class CartPage extends StatelessWidget {
                   itemBuilder: (BuildContext context, int index) {
                     return Card(
                       margin:
-                          const EdgeInsets.all(14), //ระยะห่างระหว่างขอบหน้าจอ
+                          const EdgeInsets.all(14),
                       color: Colors.lightBlue.shade300,
                       child: Padding(
                         padding: const EdgeInsets.all(
-                            16), //ระยะของขอบ Card ใน laout ข้างใน
+                            16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
@@ -109,7 +109,6 @@ class CartPage extends StatelessWidget {
                       ),
                       ElevatedButton(
                           onPressed: () {
-                            //Get.to(CartPage());
                           },
                           style: ElevatedButton.styleFrom(
                             primary: Colors.orange.shade400,
