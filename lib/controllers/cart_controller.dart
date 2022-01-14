@@ -3,6 +3,7 @@ import 'package:getx_test_02/models/product.dart';
 
 class CartController extends GetxController {
   var cartItems = <Product>[].obs;
+  
   double get totalPrice{
     return cartItems.fold(0, (sum, item) => sum + item.price);
   }
@@ -12,13 +13,13 @@ class CartController extends GetxController {
   int getlength(){
     return cartItems.length;
   }
-  addToCart(Product product) {
-    cartItems.add(product); 
+  addToCart(Product? product) {
+    cartItems.add(product!); 
   }
   remove(){
     cartItems.clear();
   }
-  removeCart(int index){
-    cartItems.removeAt(index);
+  removeCart(int? index){
+    cartItems.removeAt(index!);
   }
 }

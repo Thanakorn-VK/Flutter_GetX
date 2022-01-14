@@ -12,7 +12,7 @@ class ShoppingPage extends StatelessWidget {
 
   final ShoppingController shoppingcontroller = Get.find();
   final CartController cartcontroller = Get.find();
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
